@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>ChitFun</title>
+
+        <link rel='icon' type='png' href='../static/images/COVI-FUN-ICON.png'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename='Css/music.css')}}">
+
+        <script src = "{{url_for('static', filename='Js/music.js')}}"></script>
+        </head>
+        <body>
+
+            <div class = "main">
+                <p id = "logo"><i class="fas fa-music"></i>COVI-FUN</p>
+                <div class="left">
+                    <img id = "track_img" src = "static/images/COVI-FUN.png">
+                        <div class="volume">
+                            <p id = "volume_show">90% </p>
+                            <i class="fas fa-volume-up" aria-hidden="true" id = "volume-level" onclick="mute()"></i>
+                            <input type = "range" min = "0" max = "100" value = "90" onchange="volumeChange()">
+                        </div>
+                    </div>
+                <div class="right">
+
+                    <div class="show_current_no">
+                        <p class="present">
+                            1
+                        </p>
+                        <p>/</p>
+                        <p id = "total">5</p>
+                    </div>
+                    <!-- title -->
+                    <p id = "title">title</p>
+                    <p id = "artist">Artist name</p>
+
+
+                    <div class="middle">
+                        <button onclick="previousSong()" id = "pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                        <button onclick="justPlay()" id = "play"><i class="fa fa-play-circle" aria-hidden="true"></i></button>
+                        <button onclick="nextSong()" id = "next"><i class="fa fa-step-forward" aria-hidden="true"></i> </button>
+                    </div>
+                    
+
+                    <button id = "auto" onclick="autoPlaySwitch()">AutoPlay<i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+                    <div class="song-duration">
+                        <input type="range" min = "0" max = "100" value="0" id = "song-duration-slider" onchange = "songDurationChange()">
+                    </div>
+
+                    <div id = "logout">
+                        <a href = "/logout"><p>LOGOUT</p></a>
+                    </div>
+
+                </div>
+
+                    </div>
+
+        </body>
+    </html>

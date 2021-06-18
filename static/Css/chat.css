@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#rightside-pannel
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px; */
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right , #5d6d7e , #566573);
+    max-height: 280px;
+
+    
+}
+.wrapper
+{
+    display: flex;
+    margin-top: 50px;
+    /* margin-left: 50px; */
+    /* margin-right: 50px;  */
+
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 10px;
+}
+#main-section
+{
+    display: flex;
+    justify-content: left;
+}
+#input-area
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+a
+{
+    color: brown;
+}
+
+
+
+

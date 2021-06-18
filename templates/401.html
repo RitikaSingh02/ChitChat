@@ -1,0 +1,15 @@
+ 
+{% from 'field-macro.html' import displayField %}
+{% extends "base.html" %}
+
+{% block title %}Page Not Found {% endblock %}
+
+{% block content %}
+    <h2>Sorry, You are not Authorized to access this page!</h2>
+    <br/>
+    <h4>Go to <a href={{url_for('login')}}>login page</a> to start chating.</h3>
+    <br/>
+    <hr>
+
+    <p>Have not registered? <a href={{url_for('index')}}>Register here</a>.</p>
+{% endblock %}
