@@ -1,3 +1,2 @@
 # ChitChat
-Socketio Implementation 
-Flask Auth
+>Chat Application with Websockets implementation + FLask Auth
